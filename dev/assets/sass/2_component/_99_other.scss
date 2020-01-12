@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*------------------------------------------------------------
 other
 ------------------------------------------------------------*/
@@ -8,4 +9,31 @@ other
     clear: both;
     display: block;
     content: "";
+=======
+/*------------------------------------------------------------
+other
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-clearfix:after{
+    clear: both;
+    display: block;
+    content: "";
+}
+.c-btn--menu{
+    position: absolute;
+    right: 0px;
+    top: -199px;
+    width: 63px;
+    margin-right: 37px;
+}
+.is-open{
+    display: block;
+    // opacity: 1;
+    // visibility: visible;
+}
+._close{
+    display: none;
+>>>>>>> 46bf2e6bb54c1c6b3823493e2d054ca7ae26dc67
 }

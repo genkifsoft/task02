@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //============================================
 // clearfix
 //============================================
@@ -20,4 +21,33 @@
 	@else if $point == sp {
 		@media only screen and (max-width: 767px) { @content ; }
 	}
+=======
+//============================================
+// clearfix
+//============================================
+@mixin clear {
+	*zoom: 1;
+	&:after{
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+//============================================
+// breakpoint
+//============================================
+@mixin breakpoint($point) {
+	@if $point == tablets {
+		@media only screen and (max-width: 1024px) { @content ; }
+	}
+	@else if $point == sp {
+		@media only screen and (max-width: 767px) { @content ; }
+	}
+}
+
+@mixin buttonblock($width, $height) {
+	width: $width;
+	height: $height;
+>>>>>>> 46bf2e6bb54c1c6b3823493e2d054ca7ae26dc67
 }

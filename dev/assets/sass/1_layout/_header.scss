@@ -1,6 +1,146 @@
+<<<<<<< HEAD
 /* Header
 ------------------------------------------------------------*/
 .c-header{
     height: 100vh;
     margin: 0 auto;
 }
+=======
+/* Header
+------------------------------------------------------------*/
+.resetblock{
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+.c-header:before{
+    background: url("../img/slider1.png") no-repeat center;
+    width: 100%;
+    height: 100vh;
+    content: "";
+    display: block;
+    margin-top: 19px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.c-header{
+    max-width: $sliderWidth;
+    height: 100vh;
+    margin: 0px auto;
+    position: relative;
+    @include breakpoint(sp) {
+        margin: 20px auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    &__info{
+        @include breakpoint(sp) {
+            width: auto;
+        }
+        .c-open{
+            position: absolute;
+            right: 10px;
+            top: -245px;
+            max-width: 30px;
+        }
+        position: absolute;
+        @extend .resetblock;
+        top: 255px !important;
+        width: 820px;
+        margin: auto;
+        text-align: center;
+        .c-header__title{
+            margin-bottom: 35px;
+            h2{
+                font-size: 3.6rem;
+                color: #fff;
+                margin-left: -17px;
+            }
+        }
+        img{
+            @include breakpoint(sp) {
+                margin: auto;
+            }
+            margin-bottom: 70px;
+        }
+    }
+    .c-menu{
+        @include breakpoint(sp) {
+            margin-top: 80px;
+            display: inline-block;
+        }
+        margin-top: 17px;
+        font-weight: bold;
+        ul{
+            // display: none;
+            margin-left: 10px;
+            li{
+                @include breakpoint(sp) {
+                    width: 100%;
+                    margin: auto;
+                    padding-top: 10px;
+                }
+                float: left;
+            }
+            li:first-child{
+                @include breakpoint(sp) {
+                    margin-left: 0px;
+                }
+                margin-left: 15px;
+            }
+            li:nth-child(odd){
+                padding-left: 50px;
+                float: left;
+            }
+            li:nth-child(even){
+                padding-left: 49px;
+            }
+        }
+        .c-icon{
+            @include breakpoint(sp) {
+                display: inline-block;
+            }
+            &__sub{
+                @include breakpoint(sp) {
+                    margin: -11px 10px 0px -100px;
+                }
+                display: inline-block;
+                position: absolute;
+                li{
+                    margin-left: 0px;
+                    margin-right: -32px;
+                }
+            }
+        }
+    }
+}
+nav.c-menu.is-open{
+    display: none;
+}
+.menu{
+    ul{
+        li:hover{
+            opacity: 0.5;
+        }
+        li.active{
+            opacity: 0.5;
+            font-weight: bold;
+        }
+    }
+    width: calc(100% - 250px);
+    float: right;
+    ul{
+        float: right;
+        line-height: 50px;
+        li{
+            float: left;
+            margin-left: 37px;
+        }
+    }
+}
+
+// <%- include('inc/_footer'); %>
+>>>>>>> 46bf2e6bb54c1c6b3823493e2d054ca7ae26dc67

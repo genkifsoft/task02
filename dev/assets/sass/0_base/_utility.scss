@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ///*------------------------------------------------------------
 //Anchor position
 //------------------------------------------------------------*/
@@ -34,4 +35,43 @@
     font-weight: bold;
     line-height: 2.25;
     border-bottom: 1px dotted #6d3010;
+=======
+///*------------------------------------------------------------
+//Anchor position
+//------------------------------------------------------------*/
+//.u-anchor:before{
+//	content:"";
+//	margin-top: -100px;
+//	padding-top: 100px;
+//}
+
+//------------------------------------------------------------
+// margin
+//------------------------------------------------------------
+
+//------------------------------------------------------------
+// color
+//------------------------------------------------------------
+.u-blue{
+    color: #1f53fa;
+}
+.is_active {
+    opacity: 0.5;
+ }
+.u-642200{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 2.25;
+    border-bottom: 1px dotted #6d3010;
+}
+.u-cccccc:after{
+    content: "";
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 2.25;
+    padding-top: 10px;
+    border-bottom: 1px dotted #6d3010;
+>>>>>>> 46bf2e6bb54c1c6b3823493e2d054ca7ae26dc67
 }
